@@ -1,0 +1,23 @@
+[project]
+name = "youtube-hunter-mcp"
+version = "0.1.0"
+description = "MCP server for YouTube research: channel mining, viral outliers, transcripts, thumbnail OCR and HTML dashboards"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.28,<2",
+    "pillow>=12.3.0",
+    "playwright>=1.63.0",
+    "rapidocr-onnxruntime>=1.4.4",
+    "youtube-transcript-api>=1.2.4",
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+youtube-hunter-mcp = "youtube_hunter_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

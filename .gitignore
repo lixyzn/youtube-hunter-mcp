@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Ambientes virtuais
+.venv/
+.venv.*/
+
+# Ferramentas e caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Credenciais e configuração local
+.env
+.env.*
+!.env.example
+cookies.txt
+cookies*.txt
+*.pem
+*.key
+
+# Dados gerados pela pesquisa (não versionar)
+downloads/
+dossiers/
+.tools/
+*.log
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
